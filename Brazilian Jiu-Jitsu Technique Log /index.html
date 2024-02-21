@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Training Analysis</title>
+</head>
+<body>
+<form action="" method="get" class="daily-form">
+<div class="top-information">
+    <label for="instructor-name">Instructor's Name:</label>
+    <input list="instructors">
+            <datalist id="instructors">
+                <option value="Jaime">Jaime</option>
+                <option value="Kyle">Kyle</option>
+                <option value="Chris">Chris</option>
+            </datalist>
+<label for="date">Date:</label>
+    <input type="date" value="2025-01-01">
+<label for="dress-style">Style:</label>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Gi</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">No-Gi</label><br>
+<label for="training-type">Training Type</label><br>
+    <input type="checkbox" id="training1" value="Drilled">
+<label for="training1">Drilled</label><br>
+    <input type="checkbox" id="training2" value="Rolled">
+<label for="training2">Rolled</label><br>
+    <input type="checkbox" id="training3" value="Coached">
+<label for="training3">Coached</label><br>
+    <input type="checkbox" id="training4" value="Other">
+<label for="training4">Other</label>
+    <input type="text" name="other-training" id="other-training"><br>
+<label for="daily-obj">Daily Objective</label><br>
+    <input type="text" id="daily-obj" name="daily-obj" value="Type objective here..."><br>
+<label for="monthly-focus">Monthly Focus</label><br>
+    <input type="text" id="month-foc" name="month-foc" value="Type focus here..."><br>
+<label for="">Energy/Motivation</label>
+    <input type="range" id="energy" name="energy" list="values" />
+<label for="">Hours of Sleep</label>
+    <input type="range" id="sleep" name="sleep" list="values" />
+<label for="">Diet Rating</label>
+    <input type="range" id="diet" name="diet" list="values" />
+<label for="">Physical Condition</label>
+    <input type="range" id="physical" name="physical" list="values" />
+<datalist id="values">
+    <option value="0" label="0"></option>
+    <option value="25" label="25"></option>
+    <option value="50" label="50"></option>
+    <option value="75" label="75"></option>
+    <option value="100" label="100"></option>
+</datalist><br>
+<label for="monthly-focus">Monthly Focus</label><br>
+    <input type="text" id="month-foc" name="month-foc" value="Type focus here..."><br>
+<label for="">Focus Meter:</label>
+    <input type="range" id="focus" name="focus" list="values" /><br>
+<label for="daily-obj">Technique Notes</label><br>
+    <input type="text" id="technique" name="technique"><br>
+<label for="daily-obj">Key Learning</label><br>
+    <input type="text" id="key-learn" name="key-learn"><br>
+</div>
+</form>
+</body>
+</html>

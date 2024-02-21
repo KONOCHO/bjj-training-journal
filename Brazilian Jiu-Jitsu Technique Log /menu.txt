@@ -1,0 +1,15 @@
+Training Analysis Title
+Instructor - Dropdown
+Date - ???
+Style (Gi or No-Gi) - Checkbox
+Training Type (Drilled, Rolled, Coached, Other) - Checkbox
+Daily Objective - Big input box
+Monthly Focus - Big input box
+Health Levels
+	Energy/Motivation - Slidebar
+	Hours of Sleep - Slidebar
+	Diet Rating - Slidebar
+	Physical Condition - Slidebar
+Technique Notes - Big input box
+Focus Meter - Slidebar
+Key Learning - Big Input box
