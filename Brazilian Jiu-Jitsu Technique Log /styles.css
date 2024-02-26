@@ -2,9 +2,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #333;
+    display: flex;
 }
 
-.site-background {
+.site-right {
     border: 1px solid #fff; /* White border for contrast */
     margin: 20px; /* Space around the border */
     padding: 20px; /* Space inside the border */
