@@ -13,13 +13,93 @@
         </div>
         <nav class="site-nav">
             <ul>
-                <li><a href="index.html">Log</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Training Journal</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#freesession">Free Session</a></li>
             </ul>
         </nav>
     </header>
+    <div class="heading">
+        <h1>Training Journal</h1>
+    </div>
 <div class="log-bodies">
     <div class="site-left">
+        <form action="submitForm.php" method="get" class="daily-form">
+            <label for="instructor-name">Instructor's Name:</label>
+            <input list="instructors" id="instructor-name" name="instructor">
+                    <datalist id="instructors">
+                        <option value="Jaime"></option>
+                        <option value="Kyle"></option>
+                        <option value="Chris"></option>
+                    </datalist>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="2025-01-01">
+            <fieldset>
+                <legend>Style:</legend>
+                <input type="radio" id="gi" name="style" value="Gi">
+                    <label for="gi">Gi</label>
+                <input type="radio" id="no-gi" name="style" value="No-Gi">
+                    <label for="no-gi">No-Gi</label>
+            </fieldset>
+            <fieldset>
+                <legend>Training Type:</legend>
+                <input type="radio" id="training1" name="training" value="Drilled">
+                    <label for="training1">Drilled</label>
+                <input type="radio" id="training2" name="training" value="Rolled">
+                    <label for="training2">Rolled</label>
+                <input type="radio" id="training3" name="training" value="Coached">
+                    <label for="training3">Coached</label>
+                <input type="radio" id="training4" name="training" value="Seminar">
+                    <label for="training4">Seminar</label>
+            </fieldset>
+            <fieldset>
+            <legend>Daily Objective:</legend>
+            <input type="text" id="daily-obj" name="daily-obj" placeholder="Type objective here...">
+            </fieldset>
+            <fieldset>
+            <legend>Monthly Focus:</legend>
+            <input type="text" id="month-foc" name="monthly-focus" placeholder="Type focus here...">
+            </fieldset>
+            <fieldset>
+            <legend>Energy/Motivation:</legend>
+            <input type="range" id="energy" name="energy" list="values">
+            </fieldset>
+            <fieldset>
+            <legend>Hours of Sleep:</legend>
+            <input type="range" id="sleep" name="sleep" list="values">
+            </fieldset>
+            <fieldset>
+            <legend>Diet Rating:</legend>
+            <input type="range" id="diet" name="diet" list="values">
+            </fieldset>
+            <fieldset>
+            <legend>Physical Condition:</legend>
+            <input type="range" id="physical" name="physical" list="values">
+            </fieldset>
+            <datalist id="values">
+                <option value="0" label="0"></option>
+                <option value="25" label="25"></option>
+                <option value="50" label="50"></option>
+                <option value="75" label="75"></option>
+                <option value="100" label="100"></option>
+            </datalist>
+            <fieldset>
+            <legend>Focus Meter:</legend>
+            <input type="range" id="focus" name="focus" list="values">
+            </fieldset>
+            <fieldset>
+            <legend>Technique Notes:</legend>
+            <input type="text" id="technique" name="technique">
+            </fieldset>
+            <fieldset>
+            <legend>Key Learning:</legend>
+            <input type="text" id="key-learn" name="key-learn">
+            </fieldset>
+            <button>Submit!</button>
+        </div>
+    <div class="site-right">
         <h1>Log Explaination</h1>
         <h2><i>Insert text here.</i></h2>
         <h3>Instructor's Name</h3>
@@ -50,63 +130,7 @@
         <p>Eureka moments only! What golden nugget did you unearth today? This is the spot for your breakthroughs, brainwaves, and occasional facepalms.</p>
     
     </div>
-<div class="site-right">
-<form action="submitForm.php" method="get" class="daily-form">
-    <label for="instructor-name">Instructor's Name:</label>
-    <input list="instructors" id="instructor-name" name="instructor">
-            <datalist id="instructors">
-                <option value="Jaime"></option>
-                <option value="Kyle"></option>
-                <option value="Chris"></option>
-            </datalist>
-    <label for="date">Date:</label>
-    <input type="date" id="date" name="date" value="2025-01-01">
-    <fieldset>
-        <legend>Style:</legend>
-        <input type="radio" id="gi" name="style" value="Gi">
-            <label for="gi">Gi</label>
-        <input type="radio" id="no-gi" name="style" value="No-Gi">
-            <label for="no-gi">No-Gi</label>
-    </fieldset>
-    <fieldset>
-        <legend>Training Type:</legend>
-        <input type="checkbox" id="training1" name="training" value="Drilled">
-            <label for="training1">Drilled</label>
-        <input type="checkbox" id="training2" name="training" value="Rolled">
-            <label for="training2">Rolled</label>
-        <input type="checkbox" id="training3" name="training" value="Coached">
-            <label for="training3">Coached</label>
-        <input type="checkbox" id="training4" name="training" value="Other">
-            <label for="training4">Other</label>
-        <input type="text" name="other-training" id="other-training" disabled><br>
-    </fieldset>
-    <label for="daily-obj">Daily Objective:</label>
-    <input type="text" id="daily-obj" name="daily-obj" placeholder="Type objective here...">
-    <label for="month-foc">Monthly Focus:</label>
-    <input type="text" id="month-foc" name="monthly-focus" placeholder="Type focus here...">
-    <label for="energy">Energy/Motivation:</label>
-    <input type="range" id="energy" name="energy" list="values">
-    <label for="sleep">Hours of Sleep:</label>
-    <input type="range" id="sleep" name="sleep" list="values">
-    <label for="diet">Diet Rating:</label>
-    <input type="range" id="diet" name="diet" list="values">
-    <label for="physical">Physical Condition:</label>
-    <input type="range" id="physical" name="physical" list="values">
-    <datalist id="values">
-        <option value="0" label="0"></option>
-        <option value="25" label="25"></option>
-        <option value="50" label="50"></option>
-        <option value="75" label="75"></option>
-        <option value="100" label="100"></option>
-    </datalist>
-    <label for="focus">Focus Meter:</label>
-    <input type="range" id="focus" name="focus" list="values">
-    <label for="technique">Technique Notes:</label>
-    <input type="text" id="technique" name="technique">
-    <label for="key-learn">Key Learning:</label>
-    <input type="text" id="key-learn" name="key-learn">
-    <button>Submit!</button>
-</div>
+
 </div>
 </form>
 <footer class="site-footer">

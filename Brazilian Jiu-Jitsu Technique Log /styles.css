@@ -13,18 +13,22 @@ body {
 .site-left {
     margin: 20px; /* Space around the border */
     padding: 20px; /* Space inside the border */
-    color: white;
     flex-direction: row;
-    flex: 1;
+    flex: 3;
+    background-color: white;
+    border-radius: 15px;
 }
+
+.heading {
+    color: yellow;
+}
+
 .site-right {
     margin: 20px; /* Space around the border */
     padding: 20px; /* Space inside the border */
-    background-color: #222222; /* Lighter background for the content area */
     color: white;
     flex-direction: row;
-    flex: 3;
-    border-radius: 15px;
+    flex: 1;
 }
 
 .site-right button{
@@ -63,7 +67,7 @@ background-color: gold;
 .site-nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .site-nav ul li a:hover {
